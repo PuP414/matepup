@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* เพื่อให้ padding ไม่ทำให้ width เกิน */
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator-keys button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.2s;
+}
+
+.calculator-keys button:hover {
+    background-color: #d0d0d0;
+}
+
+.operator {
+    background-color: #f7923b;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #e0802c;
+}
+
+.equal-sign {
+    grid-column: span 2; /* ทำให้ปุ่มเท่ากับกินพื้นที่ 2 คอลัมน์ */
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.equal-sign:hover {
+    background-color: #45a049;
+}
+
+.clear {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.clear:hover {
+    background-color: #c9302c;
+}
